@@ -1,0 +1,84 @@
+/* Mylan TOUDJI 04/11 exo3 */
+
+
+:root {
+    --fond: #370031;
+    --bordeaux: #832232;
+    --violet: #4c0043;
+}
+
+body {
+    background-color: var(--fond);
+    color: white;
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--bordeaux);
+    text-align: center;
+    padding: 10px;
+}
+
+header h1 {
+    color: white;
+    font-weight: bold;
+}
+main {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 20px;
+}
+
+.carte {
+    background-color: var(--violet);
+    border-radius: 30px;
+    padding: 15px;
+    flex: 1;
+}
+
+.titre-carte {
+    background-color: var(--bordeaux);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.contenu {
+    background-color: var(--bordeaux);
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 25px;
+    padding: 15px;
+}
+
+.contenu img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 25px;
+}
+
+footer {
+    background-color: var(--bordeaux);
+    text-align: center;
+    padding: 20px;
+}
+footer a {
+    background-color: var(--fond);
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 15px;
+}
+@media (max-width: 800px) {
+    main {
+        display: block;
+    }
+}
